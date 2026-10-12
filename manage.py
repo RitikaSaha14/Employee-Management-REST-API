@@ -1,10 +1,7 @@
-__pycache__/
-*.py[cod]
-*$py.class
-.env
-.venv/
-venv/
-db.sqlite3
-.DS_Store
-.idea/
-.vscode/
+import os
+import sys
+
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "employee_api.settings")
+    from django.core.management import execute_from_command_line
+    execute_from_command_line(sys.argv)
